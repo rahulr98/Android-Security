@@ -196,4 +196,138 @@ the page through 'am' command.
 
 ![image](https://github.com/rahulr98/Android-Security/assets/116432525/b8bf1200-3f3e-4ff5-99c3-2dd2b0cdbbdb)
 
-  -  
+  -  Now we sign the app using jarsigner.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/398f582a-a9c6-40fb-b9b8-8bfafaa0ae5f)
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/b343a995-bfd5-4c0f-ac2f-8a912933ecd7)
+
+  -  Now we verify the signature of the application using uber-apk-signer
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/0041a463-5c4b-4028-909e-0e7ca8704a68)
+
+  -  Decompiling the application using apktool
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/2dd77db9-cd0e-4b6e-b28f-db74bb8e524f)
+
+  -  Now building a new apk with the decompiled tool.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/ee708061-c232-4464-b225-73902f502efd)
+
+  -  Now, verifying the signature of the built apk with uber-apk-signer
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/b4d93dd1-9303-498e-9a6a-58f2ecef9722)
+
+  -  We can enter the keystore file and generate keystore in GUI.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/a13f70bd-f863-4a6f-ada1-64685b14291f)
+
+  -  Setting up the Mobile Security Framework and installing it.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/0ab2e52a-b1b4-4e67-81df-28c693a3096b)
+
+  -  We go into the IP and Port number provided which leads us into a tool Mobile Security Framework.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/37465223-aa46-4af6-b8cf-fae47539ecca)
+
+  -  We upload an application and perform static analysis of it.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/70dcbf55-a418-4b5e-a16d-b1b6fb64ef4a)
+
+  -  List of the activities present in the application.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/38287507-f755-4343-ab0a-484428a8b9f7)
+
+  -  We can go through the Java source code and also the Smali code
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/33fdf9d1-b1eb-470d-957f-ac97a7217275)
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/df18852c-323a-4ab3-a11f-fe50fb9b86dd)
+
+  -  We can also analyze Android API through this platform.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/afb5574b-f142-4307-926c-a83ef553e7b5)
+
+  -  These are the rules of MobileSF written in yaml file.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/a25b1420-af02-48ae-8d17-e21273813dca)
+
+  -  Code analysis is performed and provided along with the location of the files that are under threat.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/7fb41b35-7377-4564-b8bb-da6874e768cc)
+
+  -  An analysis of shared libraries are here,
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/87814ab1-9c4a-4b38-b5e0-65ce914a8be0)
+
+  -  APKID Analysis performed.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/392b20f9-b350-42a6-a4a1-4ddaddf4061b)
+
+  -  Domain Malware Check is also performed.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/edc73606-8507-4859-b174-7f07aaf17bb2)
+
+  -  String is also a result of the obtained source code.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/4367ad2d-ed32-47d8-a5ec-190b56d35ae2)
+
+  -  Installing MITMPROXY.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/b97e7a7e-09d7-4b76-bccd-e4fd1254666a)
+
+  -  We installed FRIDA and FRIDA-TOOLS to disable the SSL wining check happening in the Android Application.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/ed561d93-17a7-4774-8839-42b4cb20ad51)
+
+  -  Now we execute the mitmproxy to check for flaws.
+  -  Now we go to our emulator and add the proxy to the existing wifi connection
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/663d5353-ad13-41f6-8942-4d17eabf43cc)
+
+  -  Now, when we browse something using the wifi network, we get the result captured by mitmproxy.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/c189842d-e834-4027-9002-d0a994a53b59)
+
+  -  We try executing Frida.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/7367d9f7-6536-4fae-9741-c93f54ae9c0d)
+
+  -  We download a script ' unpin.js ' for SSL unpinning bypass with Frida
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/4c582c40-ca0b-488f-abc8-ad053c129a0c)
+
+  -  Now we keep mitmproxy in the background and use the unpin.js with Frida to open the Twitter app using the package 'com.example.twitter.lite'.
+  -  Now we installed BurpSuite Community Edition and we have created a port and added IP of our client.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/a19685ee-1008-4c65-854d-f956e5227119)
+
+  -  We also set the connection of our wifi with the same IP and port number
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/18c0fcc5-dce8-42d0-85fd-8195fa5eade0)
+
+  -  Now we proceed for installation for androwarn.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/08832743-cc4d-40bf-b36f-44258b6c52ca)
+
+  -  We have used androwarn to do static analysis and create a report.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/63f258e6-1114-4d1f-ac7e-c1939e3cec8a)
+
+  -  Now from this, we get a report of our application which has undergone static analysis.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/acac2260-4e07-41ef-976d-9b9ece2d3b53)
+
+  -  We used emulator binary to run the device in cold boot mode and then  we found the log using the find command
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/f12c9ef2-774b-4ba6-a65c-81266f0f2d7a)
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/0a40bb3c-2a43-462c-8072-359f471dd7c1)
+
+  -  We can view the log files that are generated
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/bd88200a-5755-45f1-bb58-172e3e4dfdfe)
+
+  -  Cloned the crylogger from github.
+
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/19436a9b-532e-430a-bec9-70f5e0fe14ad)
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/1da81489-acc0-4a75-8ca1-2b8e6118d99f)
+![image](https://github.com/rahulr98/Android-Security/assets/116432525/d09736b0-aa45-4ccc-ba47-598f08c676b9)
+
